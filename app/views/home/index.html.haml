@@ -9,16 +9,16 @@
     .col-md-3
       = form_for @review do |f|
         = f.hidden_field :rating, value: 4
-        = f.submit :class => 'very_happy'
+        = f.submit :class => 'very_happy', value: ''
     .col-md-3
       = form_for @review do |f|
         = f.hidden_field :rating, value: 3
-        = f.submit :class => 'happy'
+        = f.submit :class => 'happy', value: ''
     .col-md-3
       = form_for @review do |f|
         = f.hidden_field :rating, value: 2
-        = f.submit :class => 'sad'
+        = f.submit :class => 'sad', value: ''
     .col-md-3
       = form_for @review do |f|
         = f.hidden_field :rating, value: 1
-        = f.submit :class => 'very_sad'
+        = f.submit :class => 'very_sad', value: ''
