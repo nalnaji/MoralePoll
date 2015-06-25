@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
   def create
+    session['voted'] = true
     Review.create(review_params)
     redirect_to :root
   end
