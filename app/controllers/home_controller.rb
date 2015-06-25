@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
     @review = Review.new
+    @average_review = Review.rating_average.round
     if session['voted'] then
       @voted = true
     end
